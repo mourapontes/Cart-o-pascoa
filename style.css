@@ -1,0 +1,124 @@
+/* Estilo geral */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #f9f0ff;
+    color: #6b3e26;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    color: #d35400;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos ovos */
+.egg {
+    width: 60px;
+    height: 80px;
+    background-color: #f1c40f;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.egg:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do coelho */
+.bunny {
+    font-size: 3em;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: transform 0.3s, color 0.3s;
+    color: #8e44ad;
+}
+
+.bunny:hover {
+    transform: scale(1.2);
+    color: #d35400;
+}
+
+/* Mensagem oculta */
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+/* Container do cartão */
+.cartao-container {
+    margin: 20px auto;
+    max-width: 500px;
+    position: relative;
+}
+
+/* Estilo do cartão de Páscoa */
+.cartao-pascoa {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao-pascoa:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensagem no cartão */
+.mensagem-cartao {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-weight: bold;
+    color: #8e44ad;
+    font-size: 1.2em;
+    border-radius: 0 0 15px 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .egg {
+        width: 50px;
+        height: 70px;
+    }
+
+    .bunny {
+        font-size: 2.5em;
+    }
+
+    .mensagem-cartao {
+        font-size: 1em;
+    }
+}
