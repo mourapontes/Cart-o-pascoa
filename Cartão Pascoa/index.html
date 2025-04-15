@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Páscoa!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Páscoa!</h1>
+        <p>Que esta Páscoa traga muita alegria, paz e prosperidade para você!</p>
+        
+        <div class="cartao-container">
+            <img src="images/cartao-pascoa.jpg" alt="Cartão de Páscoa" class="cartao-pascoa">
+            <div class="mensagem-cartao">Que esta data seja repleta de bênçãos!</div>
+        </div>
+        
+        <div class="bunny" onclick="showMessage()">🐇</div>
+        
+        <div id="easterEggs">
+            <div class="egg" onclick="eggClick(1)"></div>
+            <div class="egg" onclick="eggClick(2)"></div>
+            <div class="egg" onclick="eggClick(3)"></div>
+        </div>
+        
+        <div id="hiddenMessage" class="hidden-message">
+            <h3>Uma mensagem especial para você:</h3>
+            <p>Que a Páscoa renove suas esperanças e traga bênçãos para sua vida!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
